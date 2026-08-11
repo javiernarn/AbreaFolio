@@ -1,0 +1,44 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pf-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c987"/>
+      <stop offset="55%" stop-color="#d9a05b"/>
+      <stop offset="100%" stop-color="#b5732f"/>
+    </linearGradient>
+    <linearGradient id="pf-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2917e"/>
+      <stop offset="100%" stop-color="#c1666b"/>
+    </linearGradient>
+    <linearGradient id="pf-handle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a3a24"/>
+      <stop offset="100%" stop-color="#3a2415"/>
+    </linearGradient>
+    <radialGradient id="pf-bg" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#432c17"/>
+      <stop offset="100%" stop-color="#211408"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="128" fill="url(#pf-bg)"/>
+
+  <rect x="118" y="150" width="20" height="76" rx="10" fill="url(#pf-handle)"/>
+  <rect x="112" y="216" width="32" height="16" rx="8" fill="url(#pf-handle)"/>
+
+  <g fill="none" stroke-linecap="round">
+    <path d="M128 150 C 76 150, 52 108, 68 66 C 80 34, 118 26, 128 60" stroke="url(#pf-gold)" stroke-width="7"/>
+    <path d="M128 150 C 180 150, 204 108, 188 66 C 176 34, 138 26, 128 60" stroke="url(#pf-gold)" stroke-width="7"/>
+    <path d="M128 150 C 96 148, 78 118, 92 84" stroke="url(#pf-gold)" stroke-width="6" opacity="0.85"/>
+    <path d="M128 150 C 160 148, 178 118, 164 84" stroke="url(#pf-gold)" stroke-width="6" opacity="0.85"/>
+  </g>
+
+  <g stroke="url(#pf-rose)" stroke-width="4" stroke-linecap="round" fill="url(#pf-rose)">
+    <path d="M128 132 L128 58" stroke-width="3.4"/>
+    <ellipse cx="118" cy="70" rx="7" ry="11" transform="rotate(-24 118 70)"/>
+    <ellipse cx="138" cy="70" rx="7" ry="11" transform="rotate(24 138 70)"/>
+    <ellipse cx="115" cy="90" rx="7" ry="11" transform="rotate(-24 115 90)"/>
+    <ellipse cx="141" cy="90" rx="7" ry="11" transform="rotate(24 141 90)"/>
+    <ellipse cx="118" cy="110" rx="7" ry="11" transform="rotate(-24 118 110)"/>
+    <ellipse cx="138" cy="110" rx="7" ry="11" transform="rotate(24 138 110)"/>
+    <circle cx="128" cy="50" r="6"/>
+  </g>
+</svg>

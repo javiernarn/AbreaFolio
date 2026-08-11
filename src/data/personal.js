@@ -1,0 +1,23 @@
+export const personal = {
+  name: 'JB Boy M. Abrea',
+  role: 'Project Manager & Data Analyst',
+  tagline: 'Reading the data before it moves — precision first, insight always.',
+  lede: "IT graduate specializing in project management and data analysis. I led the ATMS capstone team at Opol Community College end-to-end — from requirements and sprint planning to the data and analytics layer — and I'm most at home turning a messy dataset or a chaotic backlog into a clear, working plan.",
+  location: 'Opol, Misamis Oriental 9016, Philippines',
+  hometown: 'Opol, Misamis Oriental',
+  email: 'jbboy.abrea@example.com',
+  phone: '0900 000 0000',
+  phoneIntl: '+639000000000',
+  birthday: 'February 5',
+  age: 26,
+  languages: 'Bisaya, Tagalog, English',
+  facebook: 'https://www.facebook.com/jbboy.abrea',
+  instagram: 'https://www.instagram.com/jbboy.abrea',
+  github: 'https://github.com/jbboyabrea',
+  linkedin: 'https://www.linkedin.com/in/jbboyabrea',
+  about: [
+    "I'm an IT graduate of Opol Community College with a track record in project management and data analysis. As project manager and lead analyst for our capstone, the ATMS (Opol Community College), I coordinated the team through requirements gathering, sprint planning, and stakeholder sign-off, while personally owning the data modeling, reporting, and analytics that told us whether the system was actually working.",
+    "I like problems with a lot of moving parts — timelines, teams, and datasets that don't line up until someone forces them to. Outside of project boards and spreadsheets, I'm sharpening my SQL and dashboarding skills, and I geek out over anime that treats strategy and precision as a kind of power in itself — the 'Limitless' mindset is basically how I approach scoping a sprint.",
+  ],
+  quote: 'A plan without data is a guess. A dataset without a plan is noise.',
+};
