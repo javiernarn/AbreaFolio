@@ -445,7 +445,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; letter-spacing: -.01em;
 /* ============ SKILLS ============ */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
 .skill-card { padding: 26px; }
-.skill-card .icon { width: 44px; height: 44px; border-radius: 12px; background: var(--grad); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 19px; }
+.skill-card .icon { width: 44px; height: 44px; border-radius: 12px; background: var(--grad); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: #fff; }
 .skill-card h3 { font-size: 16.5px; font-weight: 600; margin-bottom: 6px; font-family: 'Poppins', sans-serif; }
 .skill-card p { font-size: 13.5px; color: var(--text-dim); }
 
@@ -478,16 +478,60 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; letter-spacing: -.01em;
 /* ============ CERTS ============ */
 .certs-row { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
 .cert-card { display: flex; align-items: center; gap: 16px; padding: 22px 28px; min-width: 280px; }
-.cert-card .medal { width: 48px; height: 48px; flex: none; border-radius: 50%; background: var(--grad); display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.cert-card .medal { width: 48px; height: 48px; flex: none; border-radius: 50%; background: var(--grad); display: flex; align-items: center; justify-content: center; color: #fff; }
 .cert-card h4 { font-size: 15.5px; font-weight: 600; margin-bottom: 3px; font-family: 'Poppins', sans-serif; }
 .cert-card p { font-size: 13px; color: var(--text-dim); }
 
 /* ============ INTERESTS ============ */
 .interest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
 .interest-card { padding: 28px; text-align: center; }
-.interest-card .emoji { font-size: 30px; margin-bottom: 14px; }
+.interest-card .interest-icon {
+  width: 46px; height: 46px; margin: 0 auto 14px; border-radius: 12px;
+  background: var(--grad); display: flex; align-items: center; justify-content: center; color: #fff;
+}
 .interest-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; font-family: 'Poppins', sans-serif; }
 .interest-card p { font-size: 13.5px; color: var(--text-dim); }
+
+/* ============ OTAKU CORNER ============ */
+.otaku { margin-top: 90px; }
+
+.otaku-head { text-align: center; max-width: 680px; margin: 0 auto 40px; }
+.otaku-head h3 { font-size: clamp(24px, 3.4vw, 34px); font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+.otaku-head p { color: var(--text-dim); font-size: 15px; }
+
+.otaku-formats { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 36px; }
+.format-pill {
+  display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 600;
+  padding: 8px 16px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border-2);
+  color: var(--text-dim);
+}
+.format-pill svg { color: var(--lavender); }
+
+.genre-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.genre-card { padding: 22px; }
+.genre-card .genre-icon {
+  width: 40px; height: 40px; border-radius: 11px; margin-bottom: 12px;
+  background: var(--surface-2); border: 1px solid var(--border-2); color: var(--cyan);
+  display: flex; align-items: center; justify-content: center;
+}
+.genre-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; font-family: 'Poppins', sans-serif; }
+.genre-card p { font-size: 13px; color: var(--text-dim); }
+
+.shelf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.shelf-card { padding: 24px; }
+.shelf-card .shelf-icon {
+  width: 42px; height: 42px; border-radius: 12px; margin-bottom: 14px;
+  background: var(--grad); color: #fff; display: flex; align-items: center; justify-content: center;
+}
+.shelf-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.tag-format, .tag-genre {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 999px;
+}
+.tag-format { background: rgba(79, 140, 255, .14); color: var(--blue-2); }
+.tag-genre { background: rgba(139, 92, 246, .14); color: var(--lavender); }
+.shelf-card h4 { font-size: 16px; font-weight: 600; margin-bottom: 6px; font-family: 'Poppins', sans-serif; }
+.shelf-card p { font-size: 13px; color: var(--text-dim); }
 
 /* ============ CONTACT ============ */
 .contact-wrap {

@@ -1,11 +1,13 @@
+import * as Icons from 'lucide-react';
 import { useReveal } from '../../../hooks/useReveal';
 import { certs } from '../../../data/certs';
 
 function CertCard({ title, meta, icon }) {
   const [ref, revealed] = useReveal();
+  const Icon = Icons[icon] || Icons.Medal;
   return (
     <div className={`card cert-card reveal${revealed ? ' in' : ''}`} ref={ref}>
-      <div className="medal">{icon}</div>
+      <div className="medal"><Icon size={20} strokeWidth={2} /></div>
       <div>
         <h4>{title}</h4>
         <p>{meta}</p>

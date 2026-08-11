@@ -1,7 +1,8 @@
-// Shared "Limitless" mark used in the navbar/footer logo lockup and reused
-// as the visual basis for the PWA/favicon icon set (see public/icons +
-// favicon.svg). An abstract lightning bolt inside a focused ring — precision
-// and energy in one original mark (not a reproduction of any character art).
+// Shared "Limitless" mark used in the navbar/footer logo lockup, and the
+// same monogram (in badge form) is reused as the PWA/favicon icon set — see
+// public/favicon.svg and public/icons/. An "A" (for Abrea) fused with a
+// lightning-bolt notch inside a focused ring — an original mark, not a
+// reproduction of any character art.
 export default function BrandMark({ size = 28, className = '' }) {
   return (
     <svg
@@ -13,30 +14,36 @@ export default function BrandMark({ size = 28, className = '' }) {
       aria-hidden="true"
     >
       <defs>
-        <linearGradient id="pf-blue" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#8ecbff" />
-          <stop offset="55%" stopColor="#4f8cff" />
+        <linearGradient id="bm-mark" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#a9d4ff" />
+          <stop offset="42%" stopColor="#4f8cff" />
           <stop offset="100%" stopColor="#8b5cf6" />
         </linearGradient>
-        <linearGradient id="pf-violet" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#a78bfa" />
-          <stop offset="100%" stopColor="#7c3aed" />
+        <linearGradient id="bm-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#8ecbff" />
+          <stop offset="100%" stopColor="#8b5cf6" />
         </linearGradient>
+        <radialGradient id="bm-spark" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#e9f2ff" />
+          <stop offset="100%" stopColor="#8ecbff" />
+        </radialGradient>
       </defs>
 
       {/* outer focus ring */}
-      <circle cx="128" cy="128" r="102" fill="none" stroke="url(#pf-blue)" strokeWidth="6" opacity="0.55" />
-      <circle cx="128" cy="128" r="86" fill="none" stroke="url(#pf-violet)" strokeWidth="2.4" opacity="0.4" strokeDasharray="4 10" />
+      <circle cx="128" cy="132" r="102" fill="none" stroke="url(#bm-ring)" strokeWidth="6" opacity="0.5" />
+      <circle cx="128" cy="132" r="86" fill="none" stroke="url(#bm-ring)" strokeWidth="2.4" opacity="0.35" strokeDasharray="4 10" />
 
-      {/* central lightning bolt */}
+      {/* "A" monogram with a bolt notch cut through the crossbar */}
       <path
-        d="M142 40 L92 132 H124 L108 216 L172 118 H136 Z"
-        fill="url(#pf-blue)"
+        d="M128 46 L180 190 L154 190 L145 164 L111 164 L102 190 L76 190 L120 68 Z M128 92 L114 142 L142 142 Z"
+        fill="url(#bm-mark)"
+        fillRule="evenodd"
       />
+      <path d="M134 120 L121 144 L130 144 L120 166 L143 138 L132 138 Z" fill="url(#bm-spark)" />
 
       {/* small charged accents */}
-      <circle cx="196" cy="72" r="6" fill="url(#pf-violet)" />
-      <circle cx="58" cy="184" r="5" fill="url(#pf-violet)" opacity="0.8" />
+      <circle cx="196" cy="76" r="6" fill="url(#bm-spark)" />
+      <circle cx="58" cy="176" r="5" fill="url(#bm-spark)" opacity="0.85" />
     </svg>
   );
 }

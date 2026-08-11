@@ -1,11 +1,13 @@
+import * as Icons from 'lucide-react';
 import { useReveal } from '../../../hooks/useReveal';
 import { skills } from '../../../data/skills';
 
 function SkillCard({ icon, title, desc }) {
   const [ref, revealed] = useReveal();
+  const Icon = Icons[icon] || Icons.Sparkles;
   return (
     <div className={`card skill-card reveal${revealed ? ' in' : ''}`} ref={ref}>
-      <div className="icon">{icon}</div>
+      <div className="icon"><Icon size={20} strokeWidth={2} /></div>
       <h3>{title}</h3>
       <p>{desc}</p>
     </div>
