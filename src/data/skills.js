@@ -1,10 +1,10 @@
 export const skills = [
-  { icon: 'ClipboardList', title: 'Project Management', desc: 'Scope, timelines, sprint planning, and stakeholder coordination from kickoff to delivery.' },
-  { icon: 'ChartColumn', title: 'Data Analysis', desc: 'Cleaning, modeling, and interpreting datasets to support real decisions.' },
-  { icon: 'Database', title: 'Database Design', desc: 'Structuring relational schemas that stay sane as a system grows.' },
-  { icon: 'LayoutDashboard', title: 'Reporting & Dashboards', desc: 'Building clear reporting views and visual summaries for non-technical stakeholders.' },
-  { icon: 'Repeat', title: 'Agile / Scrum Practices', desc: 'Running sprints, standups, and retrospectives that keep a team moving.' },
-  { icon: 'Handshake', title: 'Stakeholder Communication', desc: 'Translating technical detail into plain-language updates for advisers and clients.' },
-  { icon: 'Brain', title: 'Requirements Analysis', desc: 'Turning ambiguous asks into concrete, testable system requirements.' },
-  { icon: 'FileText', title: 'Documentation', desc: 'Writing the project plans, specs, and reports that keep a capstone defensible.' },
+  { icon: 'Palette', title: 'Designing', desc: "The skill I consider myself best at — from layouts to visual polish." },
+  { icon: 'PenTool', title: 'Editing', desc: 'Photo, video, and document editing, sharpened during my OJT at the guidance office.' },
+  { icon: 'Wrench', title: 'Troubleshooting', desc: 'Diagnosing and fixing hardware and software issues on the fly.' },
+  { icon: 'Code', title: 'Programming', desc: 'Java, C++, HTML, CSS, Bootstrap, and React — used to build the capstone project.' },
+  { icon: 'ChefHat', title: 'Cooking', desc: "What I'm most passionate about — always experimenting in the kitchen." },
+  { icon: 'Cookie', title: 'Baking', desc: 'My profession — currently completing my TESDA assessment as a baker.' },
+  { icon: 'Pencil', title: 'Drawing', desc: 'Sketching and illustration as a creative outlet.' },
+  { icon: 'Mic2', title: 'Singing', desc: 'Another creative side — singing for fun in my free time.' },
 ];

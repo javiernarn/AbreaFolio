@@ -22,7 +22,7 @@ export default function Skills() {
         <div className={`section-head reveal${headIn ? ' in' : ''}`} ref={headRef}>
           <div className="eyebrow">Capabilities</div>
           <h2>Skills & <span className="gradient-text">specialties</span></h2>
-          <p>Grounded in method, backed by data, and delivered with an eye for detail.</p>
+          <p>From the kitchen to the screen — flexible, adaptable, and always willing to learn.</p>
         </div>
         <div className="skills-grid">
           {skills.map(s => <SkillCard key={s.title} {...s} />)}

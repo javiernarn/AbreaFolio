@@ -1,6 +1,4 @@
-export const certs = [
-  { title: 'Project Management Fundamentals', meta: 'Example Training Provider · 2024', icon: 'ClipboardList' },
-  { title: 'Data Analysis with SQL', meta: 'Example Online Course · 2024', icon: 'ChartColumn' },
-  { title: 'Agile & Scrum Basics', meta: 'Example Certification Body · 2024', icon: 'Repeat' },
-  { title: 'Best Capstone Project — ATMS, Opol Community College', meta: 'Opol Community College IT Department · 2025', icon: 'Medal' },
-];
+// No certificates, awards, or competition results were provided yet.
+// Add entries here in the same shape once available:
+// { title: 'Certificate Name', meta: 'Issuing Org · Year', icon: 'Medal' }
+export const certs = [];

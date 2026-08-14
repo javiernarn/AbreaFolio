@@ -11,7 +11,7 @@ export default function About() {
       <div className="container">
         <div className={`section-head reveal${headIn ? ' in' : ''}`} ref={headRef}>
           <div className="eyebrow">About Me</div>
-          <h2>The plan behind the <span className="gradient-text">data</span></h2>
+          <h2>The story behind the <span className="gradient-text">craft</span></h2>
         </div>
         <div className="about-grid">
           <div className={`about-photo reveal${photoIn ? ' in' : ''}`} ref={photoRef}>

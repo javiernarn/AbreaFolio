@@ -38,18 +38,21 @@ export default function Projects() {
           </div>
         </div>
 
-        <div
-          className={`section-head reveal${subHeadIn ? ' in' : ''}`}
-          ref={subHeadRef}
-          style={{ marginTop: 70, marginBottom: 36 }}
-        >
-          <div className="eyebrow">Collaborations</div>
-          <h2 style={{ fontSize: 'clamp(24px,3.4vw,34px)' }}>Other work I contributed <span className="gradient-text">to</span></h2>
-          <p>Example placeholder entries — supporting work as project manager and analyst, to be replaced with real project details.</p>
-        </div>
-        <div className="proj-grid">
-          {collaborations.map(c => <CollabCard key={c.title} {...c} />)}
-        </div>
+        {collaborations.length > 0 && (
+          <>
+            <div
+              className={`section-head reveal${subHeadIn ? ' in' : ''}`}
+              ref={subHeadRef}
+              style={{ marginTop: 70, marginBottom: 36 }}
+            >
+              <div className="eyebrow">Collaborations</div>
+              <h2 style={{ fontSize: 'clamp(24px,3.4vw,34px)' }}>Other work I contributed <span className="gradient-text">to</span></h2>
+            </div>
+            <div className="proj-grid">
+              {collaborations.map(c => <CollabCard key={c.title} {...c} />)}
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

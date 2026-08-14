@@ -1,27 +1,22 @@
 export const timeline = [
   {
-    title: 'Project Manager & Lead Data Analyst',
-    meta: 'ATMS Capstone Project, Opol Community College · 2024 – 2025 (example)',
+    title: 'OJT — Editor / Technical Support',
+    meta: 'Opol Community College Guidance Office · Opol · Started Jan. 19, 2026',
     bullets: [
-      'Led a cross-functional student team through requirements gathering, sprint planning, and delivery for the ATMS system.',
-      'Owned the data and analytics layer — schema design, reporting views, and dashboards used to track system performance and adoption.',
-      'Ran client/adviser check-ins, managed scope changes, and kept the team on schedule through defense and final submission.',
+      'Worked as an editor and handled technical troubleshooting for both hardware and software in the guidance office.',
+      'Served as an entrance exam facilitator during testing periods.',
+      'Picked up time management, flexibility, workplace etiquette, and adaptability in any work situation.',
+      'Received a reward for outstanding, hard work during the internship.',
     ],
   },
   {
-    title: 'IT Project Management Intern',
-    meta: 'Example Placement — Local IT Office, Opol · 2024 (example)',
+    title: 'Project Manager — Capstone Project',
+    meta: 'Web-Based Alumni Tracing Management System, Opol Community College Guidance Office · 2024',
     bullets: [
-      'Assisted in documenting workflows and drafting project timelines for an internal systems rollout.',
-      'Supported basic data cleaning and reporting tasks for existing spreadsheets and records.',
-    ],
-  },
-  {
-    title: 'Student Analyst, Campus Systems Committee',
-    meta: 'Opol Community College · 2023 (example)',
-    bullets: [
-      'Helped compile and analyze survey data on student services for a campus improvement proposal.',
-      'Prepared summary charts and a short report presented to the committee.',
+      'Managed the capstone team building an online platform for tracing alumni of Opol Community College, with a built-in behavioral test.',
+      'Supported the whole team and kept the project on schedule from planning through delivery.',
+      'Built with React, HTML, CSS, and Java, among other tools.',
+      'Delivered for both the school and the client (the guidance office); the system was successfully deployed.',
     ],
   },
 ];

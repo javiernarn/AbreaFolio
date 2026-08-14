@@ -64,11 +64,11 @@ export default function Interests() {
         <div className="otaku">
           <div className={`otaku-head reveal${otakuHeadIn ? ' in' : ''}`} ref={otakuHeadRef}>
             <div className="eyebrow">Otaku Corner</div>
-            <h3>Currently watching, reading, and <span className="gradient-text">re-reading</span></h3>
+            <h3>Games, anime, and <span className="gradient-text">manga</span></h3>
             <p>
-              Outside the spreadsheets, I'm usually deep in a story — anime, manga,
-              manhwa, manhua, donghua, and the light novels they're built on. Here's
-              a shelf of what keeps pulling me back.
+              Outside of school, work, and the kitchen, I'm usually deep in a game,
+              an anime, or a manga chapter — these are the things I could talk about
+              for hours.
             </p>
           </div>
 
@@ -87,9 +87,11 @@ export default function Interests() {
           </div>
 
           {/* the shelf itself */}
-          <div className="shelf-grid">
-            {shelf.map(s => <ShelfCard key={s.title} {...s} />)}
-          </div>
+          {shelf.length > 0 && (
+            <div className="shelf-grid">
+              {shelf.map(s => <ShelfCard key={s.title} {...s} />)}
+            </div>
+          )}
         </div>
       </div>
     </section>

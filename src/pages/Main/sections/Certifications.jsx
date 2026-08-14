@@ -25,9 +25,13 @@ export default function Certifications() {
           <div className="eyebrow">Credentials</div>
           <h2>Recognition along the <span className="gradient-text">way</span></h2>
         </div>
-        <div className="certs-row">
-          {certs.map(c => <CertCard key={c.title} {...c} />)}
-        </div>
+        {certs.length > 0 ? (
+          <div className="certs-row">
+            {certs.map(c => <CertCard key={c.title} {...c} />)}
+          </div>
+        ) : (
+          <p style={{ opacity: 0.7 }}>No certificates or awards listed yet — check back soon.</p>
+        )}
       </div>
     </section>
   );

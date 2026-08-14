@@ -8,7 +8,7 @@ export default function Footer() {
           <BrandMark size={20} />
           &nbsp;AbreaFolio
         </div>
-        <p>© JB Boy M. Abrea · Project Management & Data Analysis · Opol, Misamis Oriental, Philippines</p>
+        <p>© JB Boy M. Abrea · Baker & BSIT Graduate · Cagayan de Oro City, Philippines</p>
       </div>
     </footer>
   );
