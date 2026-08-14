@@ -4,6 +4,7 @@ vendor/
 
 /public/build
 /public/hot
+/dist
 /public/dist
 
 /storage/*.key
