@@ -1,7 +1,10 @@
 node_modules/
 vendor/
 .env
+
 /public/build
 /public/hot
+/public/dist
+
 /storage/*.key
 /storage/logs/*
